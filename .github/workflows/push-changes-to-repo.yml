@@ -25,7 +25,7 @@ jobs:
           "owo whats this" > test
       - name: commit
         run: |
-           cd GitHubPageTestReceiver
+          cd GitHubPageTestReceiver
           git add test
           git commit -m "test commit"
           git push origin master
