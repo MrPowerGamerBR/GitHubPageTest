@@ -28,4 +28,4 @@ jobs:
           cd GitHubPageTestReceiver
           git add test
           git commit -m "test commit"
-          git push https://MrPowerGamerBR:${{ secrets.GIT_PUBLISH_TOKEN }}@github.com/MrPowerGamerBR/GitHubPageTest
+          git push https://MrPowerGamerBR:${{ secrets.GIT_PUBLISH_TOKEN }}@github.com/MrPowerGamerBR/GitHubPageTestReceiver
