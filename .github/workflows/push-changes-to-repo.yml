@@ -7,7 +7,12 @@ jobs:
       - name: clone pages repo
         run: |
           git clone https://github.com/MrPowerGamerBR/GitHubPageTestReceiver.git
+      - name: going into the directory
+        run: |
           cd GitHubPageTestReceiver
+      - name: view files
+        run: |
+          ls
       - name: setup git config
         run: |
           git config user.name "GitHub Actions Bot"
