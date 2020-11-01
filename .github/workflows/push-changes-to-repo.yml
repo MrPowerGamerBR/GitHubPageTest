@@ -17,6 +17,7 @@ jobs:
       - name: setup git config
         run: |
           cd GitHubPageTestReceiver
+          git checkout main
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - name: write something
@@ -26,7 +27,6 @@ jobs:
       - name: commit
         run: |
           cd GitHubPageTestReceiver
-          ${{ secrets.DiscordWebhookUrl }}
           git add test
           git commit -m "test commit"
           git push https://MrPowerGamerBR:${{ secrets.GIT_PUBLISH_TOKEN }}@github.com/MrPowerGamerBR/GitHubPageTest
