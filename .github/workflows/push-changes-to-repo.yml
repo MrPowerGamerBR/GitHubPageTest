@@ -12,16 +12,20 @@ jobs:
           cd GitHubPageTestReceiver
       - name: view files
         run: |
+          cd GitHubPageTestReceiver
           ls
       - name: setup git config
         run: |
+          cd GitHubPageTestReceiver
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - name: write something
         run: |
+          cd GitHubPageTestReceiver
           "owo whats this" > test
       - name: commit
         run: |
+           cd GitHubPageTestReceiver
           git add test
           git commit -m "test commit"
           git push origin master
