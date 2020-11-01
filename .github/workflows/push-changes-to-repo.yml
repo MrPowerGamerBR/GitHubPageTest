@@ -22,7 +22,7 @@ jobs:
       - name: write something
         run: |
           cd GitHubPageTestReceiver
-          "owo whats this" > test
+          echo "owo whats this" > test
       - name: commit
         run: |
           cd GitHubPageTestReceiver
