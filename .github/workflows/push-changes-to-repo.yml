@@ -4,14 +4,14 @@ jobs:
   date:
     runs-on: ubuntu-latest
     steps:
-      - name: setup git config
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
       - name: clone pages repo
         run: |
           git clone https://github.com/MrPowerGamerBR/GitHubPageTestReceiver.git
           cd GitHubPageTestReceiver
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
       - name: write something
         run: |
           "owo whats this" > test
