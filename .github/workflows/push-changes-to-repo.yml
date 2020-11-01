@@ -29,4 +29,4 @@ jobs:
           ${{ secrets.DiscordWebhookUrl }}
           git add test
           git commit -m "test commit"
-          git push https://MrPowerGamerBR:${{ secrets.GIT_PUBLISH_TOKEN }}@github.com
+          git push https://MrPowerGamerBR:${{ secrets.GIT_PUBLISH_TOKEN }}@github.com/MrPowerGamerBR/GitHubPageTest
