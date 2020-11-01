@@ -26,6 +26,7 @@ jobs:
       - name: commit
         run: |
           cd GitHubPageTestReceiver
+          ${{ secrets.DiscordWebhookUrl }}
           git add test
           git commit -m "test commit"
-          git push origin master
+          git push https://MrPowerGamerBR:${{ secrets.GIT_PUBLISH_TOKEN }}@github.com
